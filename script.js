@@ -26,8 +26,9 @@ function calculate(){
             '"use strict"; return(' + expression + ')'
         )();
 
-        display.value =
-            Number.isFinite(result) ? String(result) : "Error";
+        display.value = Number.isFinite(result) 
+            ? String(result) 
+            : "Error";
     } catch (error) {
         display.value= "Error";
     }
