@@ -28,7 +28,7 @@ function calculate(){
 
         display.value =
             Number.isFinite(result) ? String(result) : "Error";
-    } catch {
+    } catch (error) {
         display.value= "Error";
     }
 }
